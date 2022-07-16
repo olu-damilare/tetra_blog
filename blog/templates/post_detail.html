@@ -1,0 +1,12 @@
+{% load tetra %}
+<!Doctype html>
+<html>
+  <head>
+    <title> post detail </title>
+    {% tetra_styles %}
+    {% tetra_scripts include_alpine=True %}
+  </head>
+  <body>
+      {% @ post_detail pk=pk / %}
+  </body>
+  </html>

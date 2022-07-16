@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "blog/components.py__add_post.css": {
+      "bytes": 1915,
+      "imports": []
+    },
+    "blog/__tetracache__/my_components/blog_my_components.css": {
+      "bytes": 44,
+      "imports": [
+        {
+          "path": "blog/components.py__add_post.css",
+          "kind": "import-rule"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "blog/static/blog/tetra/my_components/blog_my_components-6QUQXSH7.css.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 2379
+    },
+    "blog/static/blog/tetra/my_components/blog_my_components-6QUQXSH7.css": {
+      "imports": [],
+      "entryPoint": "blog/__tetracache__/my_components/blog_my_components.css",
+      "inputs": {
+        "blog/components.py__add_post.css": {
+          "bytesInOutput": 413
+        },
+        "blog/__tetracache__/my_components/blog_my_components.css": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 474
+    }
+  }
+}

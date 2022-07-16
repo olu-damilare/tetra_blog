@@ -1,0 +1,14 @@
+{% load tetra %}
+<html lang="en">
+  <head>
+    <title> Add post </title>
+    {% tetra_styles %}
+    {% tetra_scripts include_alpine=True %}
+  </head>
+  <body>
+     <form enctype="multipart/form-data" method="POST">
+      {% csrf_token %}
+      {% @ add_post / %}
+    </form>
+  </body>
+  </html>

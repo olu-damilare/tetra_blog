@@ -1,0 +1,15 @@
+{% load tetra %}
+<!Doctype html>
+<html>
+  <head>
+    <title> Update post </title>
+    {% tetra_styles %}
+    {% tetra_scripts include_alpine=True %}
+  </head>
+  <body>
+     <form enctype="multipart/form-data" method="POST">
+      {% csrf_token %}
+      {% @ post_update pk=pk / %}
+    </form>
+  </body>
+  </html>
